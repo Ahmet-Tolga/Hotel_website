@@ -1,0 +1,152 @@
+body{
+    animation: change 20s infinite;
+}
+@keyframes change{
+    0%{
+        background: url(1.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    20%{
+        background: url(2.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    60%{
+        background: url(3.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    100%{
+        background: url(1.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+.navbar{
+    width: 100%;
+    left: 0px;
+    right: 0px;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+}
+.navbar h1{
+    display: flex;
+    position: relative;
+    color: white;
+    font-size: 30px;
+    left: 40px;
+    align-items: center;
+    cursor: pointer;
+}
+.navbar h2{
+    position: relative;
+    color: orange;
+    font-size: 40px;
+    left: 900px;
+}
+.sidebar{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: black;
+    height: 1000px;
+    width: 0px;
+    overflow-x: hidden;
+    transition: 1s;
+}
+.sidebar a{
+    position: relative;
+    display: block;
+    color: orange;
+    font-size: 30px;
+    text-decoration: none;
+    left: 50px;
+    border-radius: 20px;
+    line-height: 90px;
+    margin-left: 10px;
+    transition: 0.5s;
+}
+.sidebar h1{
+    position: relative;
+    color: white;
+    font-size: 50px;
+    top: 0px;
+    left: 200px;
+    cursor: pointer;
+}
+.sidebar a:hover{
+    background-color: orange;
+    color: black;
+    margin-left: 20px;
+}
+.main{
+    margin: auto;
+    background-color: black;
+    color: white;
+    width: 800px;
+    height: 1500px;
+    padding-top: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+.main .images{
+    width: 600px;
+    height: 400px;
+    margin: auto;
+    overflow: hidden;
+}
+.main .images .inside{
+    display: flex;
+    flex-direction: row;
+    width: 1800px;
+    height: 400px;
+    margin: auto;
+    animation: goto 20s infinite;
+}
+.main .images .inside img{
+    height: 400px;
+    width: 600px;
+}
+.bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 1000px;
+    margin: auto;
+    background-color: black;
+    height: 50px;
+}
+.bottom a{
+    position: relative;
+    font-size: 30px;
+    height: 20px;
+    width: 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+    border: 3px white;
+}
+@keyframes goto{
+    0%{
+        transform: translateX(0px);
+    }
+    20%{
+        transform: translateX(-600px);
+    }
+    40%{
+        transform: translateX(-600px);
+    }
+    60%{
+        transform: translateX(-1200px);
+    }
+    80%{
+        transform: translateX(-1200px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}

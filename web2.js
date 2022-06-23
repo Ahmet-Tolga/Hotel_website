@@ -1,0 +1,2 @@
+document.getElementById("1").addEventListener("click",function(){document.getElementById("3").style.width="250px";})
+document.getElementById("2").addEventListener("click",function(){document.getElementById("3").style.width="0px";})
